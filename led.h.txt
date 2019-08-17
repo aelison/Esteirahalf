@@ -1,0 +1,16 @@
+#ifndef led_h
+#define led_h
+#include <Arduino.h>
+
+class Led{
+    private:
+        int pino;
+
+    public:
+        Led(int pin);
+        void ligar();
+        void desligar();
+        bool status();
+};
+
+#endif 

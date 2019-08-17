@@ -1,0 +1,16 @@
+#ifndef Motor_h
+#define Motor_h
+#include <Arduino.h>
+
+class Motor{
+    private:
+        int pino;
+
+    public:
+        Motor(int pin);
+        void ligar();
+        void desligar();
+        bool status();
+};
+
+#endif 

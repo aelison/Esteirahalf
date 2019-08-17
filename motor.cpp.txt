@@ -1,0 +1,14 @@
+#include "motor.h"
+Motor::Motor(int pin){
+  pinMode(pin,OUTPUT);
+  pino = pin;
+}
+void Motor::ligar(){
+  digitalWrite(pino,HIGH);
+}
+void Motor::desligar(){
+  digitalWrite(pino,LOW);
+}
+bool Motor::status(){
+  return digitalRead(pino);
+}
