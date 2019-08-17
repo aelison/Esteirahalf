@@ -17,6 +17,7 @@ A interface no Qt é onde acontece as principais funções do programa. Primeira
 ![](imagesave/img11.jpeg)
 Após a conexão da porta o usuário deve selecionar a velocidade e decidir se vai querer a esteira em seu modo manual ou automatico   
 
-3.Servidor Web
+# 3.Servidor Web
+--------------------------
 Infelizmente não conseguimos Conectar o servidor web
 
