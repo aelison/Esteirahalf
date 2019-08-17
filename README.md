@@ -1,5 +1,3 @@
-# Esteira industrial
- --------------------------
 # Esteira Half
 --------------------------
 Esteira indústria automática e manual
