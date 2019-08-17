@@ -2,7 +2,9 @@
 --------------------------
 Esteira indústria automática e manual
 Resumo: A Esteira Half é um projeto criado voltado a imagem de uma esteira Industrial presente em grandes fábricas, utilizadas para agilizar processos de locomoção de objetos em uma série de montagem ou até determinado local. 
-Imagem 1: imagem da esteira
+
+![](imagesave/img11.png)
+
 # 1.Manual do usuário
 --------------------------
 Como funciona a Esteira Half?
@@ -12,9 +14,9 @@ A função automática da esteira trabalha a partir do sensor, através de um ca
 # 2.Interface QT
 --------------------------
 A interface no Qt é onde acontece as principais funções do programa. Primeiramente é preciso ligar o servidor em seguida o todas as portas seriais disponiveis 
-Imagem 2: imagem do qt
+![](imagesave/img22.png)
 Após a conexão da porta o usuário deve selecionar a velocidade e decidir se vai querer a esteira em seu modo manual ou automatico   
 
 3.Servidor Web
- 
-Imagem 7: Interface do Servidor Web
+Infelizmente não conseguimos Conectar o servidor web
+
