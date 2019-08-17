@@ -20,4 +20,4 @@ Após a conexão da porta o usuário deve selecionar a velocidade e decidir se v
 # 3.Servidor Web
 --------------------------
 ![](image/image33.png)
-
+Dentro do site temos a contagem de número de objetos, e o controle do estado da esteira com os botões e o status em que a esteira se encontra, se esta em movimento ou repouso.
