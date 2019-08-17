@@ -3,7 +3,7 @@
 Esteira indústria automática e manual
 Resumo: A Esteira Half é um projeto criado voltado a imagem de uma esteira Industrial presente em grandes fábricas, utilizadas para agilizar processos de locomoção de objetos em uma série de montagem ou até determinado local. 
 
-![](imagesave/img22.png)
+![](imagesave/img22.jpeg)
 
 # 1.Manual do usuário
 --------------------------
