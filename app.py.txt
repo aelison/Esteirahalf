@@ -1,0 +1,51 @@
+import json
+
+from flask import Flask, render_template, redirect, request
+from flask_socketio import SocketIO, send, emit
+from flask_cors import CORS
+
+app = Flask(__name__)
+socketio = SocketIO(app)
+CORS(app)
+
+estado = {
+  "ESTEIRA" : 0,
+  "CONTADOR" : 0,
+  "SENSOR":  0,
+  'STATUS': 0
+}
+
+change = 1
+
+@app.route("/")
+def rota_inicial():
+  return render_template("index.html")
+
+@app.route("/upload", methods=["POST"])
+def rota_data():
+  global estado
+  estado = request.get_json()
+  socketio.emit("atualiza",estado)
+  return "200"
+
+@app.route("/download", methods=["GET"])
+def rota_download():
+  return str(estado["CONTADOR"])
+
+@socketio.on('esteira_desligada')
+def esteira_desligada():
+  global estado
+  global change
+  change = 0
+  estado["ESTEIRA"] = 0
+  estado["STATUS"] = 0
+@socketio.on('esteira_ligada')
+def esteira_ligada():
+  global estado
+  global change
+  change = 1
+  estado["ESTEIRA"] = 1
+  estado["STATUS"] = 1
+
+if __name__ == "__main__":
+    app.run("0.0.0.0",port=8080)
